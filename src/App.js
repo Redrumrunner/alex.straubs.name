@@ -1,6 +1,9 @@
-import React, { Component } from 'react';
+// import React, { Component } from '../../../Library/Caches/typescript/2.9/node_modules/@types/react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Likes from './Likes';
+import LikesChild from './LikesChild';
 
 class App extends Component {
   render() {
@@ -11,7 +14,12 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          <Likes thing="cheese" />
+          <Likes thing="beer" />
+          <Likes thing="foo" />
+          <LikesChild title="Title One">
+            <div>One is great!</div>
+          </LikesChild>
         </p>
       </div>
     );

@@ -5,4 +5,4 @@ In this step I added two new files - Likes.js and LikesChild.js. These files are
 Takes a prop ```thing``` that will render the value in a ```<p>``` tag with some text.
 
 ## LikesChild.js
-This component takes a ```title``` string prop that it wraps as an ```<h3>``` tag and renders it and all children (HTML) of the component in a ```<div>``` with a dom class/className of cards.
+This component takes a ```title``` string prop that it wraps as an ```<h3>``` tag and renders it and all children (HTML) of the component in a ```<div>``` with a dom class/className of ```card``` that is defined in LikesChild.css has a size and outline.

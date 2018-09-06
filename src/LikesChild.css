@@ -1,0 +1,9 @@
+.card {
+    max-height: 250px;
+    max-width: 150px;
+    height: 250px;
+    width: 150px;
+    border: solid 1px #000000;
+    margin: 25px;
+    padding: 10px;
+}

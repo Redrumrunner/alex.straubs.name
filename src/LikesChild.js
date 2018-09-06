@@ -1,4 +1,5 @@
 import React from 'react';
+import "./LikesChild.css";
 
 export default function LikesChild(props){
     return (

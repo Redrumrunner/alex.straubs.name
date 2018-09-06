@@ -15,10 +15,11 @@ class App extends Component {
         </header>
         <div className="App-intro">
           <Likes thing="cheese" />
-          <Likes thing="beer" />
-          <Likes thing="foo" />
-          <LikesChild title="Title One">
+          <LikesChild title="Like One?">
             <div>One is great!</div>
+          </LikesChild>
+          <LikesChild title="What about beer?">
+            <Likes thing="beer" />
           </LikesChild>
         </div>
       </div>

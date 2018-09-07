@@ -1,16 +1,34 @@
-# Added Simple React Components
-In this step I added two new files - Likes.js and LikesChild.js. These files are just basic React componets that render some simple HTML.
+# Adding boostrap
+
+## Add reactsrap
+
+I have added **reactsrap** and **bootstrap** to the project. This will give you a bunch of pre-made bootsrap components that you can use to make your page or application. Since it you have bootsrap you can also create your own components with bootstrap classes. You should not try to use the **bootsrap** javascript as it doesn't play well with react and you can do almost all of it in react components. More on that later.
+
+## Adding needed modules
+In a terminal I ran the following.
+1. ```yarn add bootsrap```
+2. ```yarn add reactstrap```
+
+### Bootsrap
+In order to use bootsrap classses I added the line ```import 'bootstrap/dist/css/bootstrap.min.css';``` to the imports of ```src/index.js```.
+
+### Reactstrap
+You can find a list of components and examples how to use them [here](https://reactstrap.github.io/components/alerts/).
+
+## App.js
+Added the import line for bootsrap (above) and changed the ```Likes``` to ```LikesJumbo``` and ```LikesChild``` to ```LikesCard```. I also made the app use reactstrap Nav and layout components. You should look at the reactstrap NavBar documentation and the bootsrap documentation to see why I used ```className="bg-light"```. Try removing it and see what happens. Also, make sure you look at all the ways I called ```<LikesCard>``` and try and understand them.
 
 ## Likes.js
-Takes a prop ```thing``` that will render the value in a ```<p>``` tag with some text.
+Removed for ```LikesJumbo.js```.
 
 ## LikesChild.js
-This component takes a ```title``` string prop that it wraps as an ```<h3>``` tag and renders it and all children (HTML) of the component in a ```<div>``` with a dom class/className of ```card``` that is defined in LikesChild.css has a size and outline.
+Removed for ```LikesCard.js```.
 
-## App.js changes
-We changed the orginal ```src/App.js``` to use the components. The following was done:
-1. We imported the ```Likes.js'' and ```LikesChild.js``` files. 
-2. We added a basic ```<Likes thing="cheese">``` jsx tag to show how a component works.
-3. We added a basic ```<LikesChild title="Like One?">``` with some standard HTML to show how a component can render children.
-4. We added a ```<LikesChild title="What about beer?">...``` with a ```<Likes>``` react component to show that rendering react components works the same as HTML.
+## LikesChild.css
+Removed because it we don't need it.
 
+## LikesJumbo.js
+Imports ```React``` and ```Jumbotron``` from ```reactsrap``` and made a component that takes a thing to like.
+
+## LikesCard.js
+    Imports ```React``` from ```react``` and ```Card```, ```CardBody```, ```CardText```, and ```CardTitle``` from ```reactstrap``` and we create a card with the props title and thing. We use ES6 (Javascript 'Next') to [destructure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) the first arguemnt passed to the react component. This will always be the props. We extract ```thing``` and ```why``` by doing ```{thing, why}``` in the function definition. And set a default ```beer``` and the text in the constant set in WHY by setting the ```{thing="beer", why=WHY}```.

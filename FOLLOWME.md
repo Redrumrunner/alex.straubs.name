@@ -16,7 +16,7 @@ In order to use bootsrap classses I added the line ```import 'bootstrap/dist/css
 You can find a list of components and examples how to use them [here](https://reactstrap.github.io/components/alerts/).
 
 ## App.js
-Added the import line for bootsrap (above) and changed the ```Likes``` to ```LikesJumbo``` and ```LikesChild``` to ```LikesCard```. I also made the app use reactstrap Nav and layout components. You should look at the reactstrap NavBar documentation and the bootsrap documentation to see why I used ```className="bg-light"```. Try removing it and see what happens. Also, make sure you look at all the ways I called ```<LikesCard>``` and try and understand them.
+Added the import line for bootsrap (above) and changed the ```Likes``` to ```LikesJumbo``` and ```LikesChild``` to ```LikesCard```. I also made the app use reactstrap Nav and layout components. You should look at the reactstrap [NavBar documentation](https://reactstrap.github.io/components/navbar/) and the [bootsrap documentation](https://getbootstrap.com/docs/4.0/components/navbar/) to see why I used ```className="bg-light"```, see if you can fix it another way. Try removing it and see what happens. Also, make sure you look at all the ways I called ```<LikesCard>``` and try and understand them.
 
 ## Likes.js
 Removed for ```LikesJumbo.js```.

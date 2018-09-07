@@ -1,0 +1,13 @@
+.padding-bottom {
+    padding-bottom: 1em;
+}
+.card-header {
+    background-color: gainsboro;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+.card-text {
+    min-height: 5em;
+    max-height: 5em;
+    height: 5em;
+    overflow: scroll;
+}
